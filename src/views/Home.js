@@ -1,17 +1,21 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { css } from "emotion";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  const styleGrid = css`
+    background: black;
+  `
   return (
-    <Fragment>
+    <div className={styleGrid}>
       <Header />
       <Nav />
       <Main />
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 

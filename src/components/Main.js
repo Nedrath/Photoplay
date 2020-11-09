@@ -1,10 +1,9 @@
 import React from "react";
-import { Router } from "@reach/router";
+import { css } from "emotion";
 
 const Main = () => {
   return (
     <main>
-      <Router></Router>
     </main>
   );
 };
