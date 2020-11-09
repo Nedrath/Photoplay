@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   const styleGrid = css`
-    background: black;
   `
   return (
     <div className={styleGrid}>
