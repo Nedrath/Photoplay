@@ -1,11 +1,13 @@
 import React from "react";
 import { Router } from "@reach/router";
-import UserContextProvider from "./context/UserContext";
+import { render } from 'react-dom'
+import Home from './views/Home'
+// import UserContextProvider from "./context/UserContext";
 
 const App = () => {
   return (
     <Router>
-      <Home path="./Home" />
+      <Home path="/" />
     </Router>
   );
 };
