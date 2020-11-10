@@ -1,8 +1,8 @@
-import Stars from './Stars'
+import ChevronBack from './ChevronBack'
 
 const Footer = () => {
   return <footer>
-    <Stars />
+    <ChevronBack />
   </footer>;
 };
 
