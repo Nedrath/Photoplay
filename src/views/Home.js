@@ -8,6 +8,8 @@ const Home = () => {
   const styleGrid = css`
   height: 100vh;
   background: black;
+  padding: 0px 16px;
+  padding-top: 44px;
   `
   return (
     <div className={styleGrid}>

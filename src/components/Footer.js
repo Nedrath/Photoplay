@@ -1,8 +1,8 @@
-import DividerCategorie from './DividerCategorie'
+import MovieAndInfo from './MovieAndInfo'
 
 const Footer = () => {
   return <footer>
-    <DividerCategorie text="tv shows" />
+    <MovieAndInfo />
   </footer>;
 };
 
