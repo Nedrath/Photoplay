@@ -1,8 +1,8 @@
-import MovieAndInfo from './MovieAndInfo'
+import Avatar from './Avatar'
 
 const Footer = () => {
   return <footer>
-    <MovieAndInfo />
+    <Avatar />
   </footer>;
 };
 
