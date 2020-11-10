@@ -1,8 +1,8 @@
-import Headline from './Headline'
+import DividerCategorie from './DividerCategorie'
 
 const Footer = () => {
   return <footer>
-    <Headline text="Watching" />
+    <DividerCategorie text="tv shows" />
   </footer>;
 };
 
