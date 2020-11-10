@@ -1,9 +1,10 @@
-import ChevronBack from './ChevronBack'
+import Headline from './Headline'
 
 const Footer = () => {
   return <footer>
-    <ChevronBack />
+    <Headline text="Watching" />
   </footer>;
 };
 
 export default Footer;
+

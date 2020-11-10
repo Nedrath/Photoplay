@@ -14,7 +14,6 @@ const ChevronBack = () => {
   const styleH3 = css`
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 500;
     color: white;
     font-weight: 700;
   `;
