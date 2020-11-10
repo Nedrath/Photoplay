@@ -1,8 +1,8 @@
-import Categories from './Categories'
+import Rating from './Rating'
 
 const Footer = () => {
   return <footer>
-    <Categories />
+    <Rating />
   </footer>;
 };
 
