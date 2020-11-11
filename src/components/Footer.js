@@ -1,16 +1,19 @@
 import { css } from 'emotion'
-import ImgShadow from './ImgShadow'
-
-import ImageX from '../img/Icons-UserMenu/Divider 1.svg'
+import ImageX from "../img/ImageFrontPage.svg";
+import ShadowTop from "./ShadowTop";
 
 const Footer = () => {
-
-  return <footer>
-    <ImgShadow shadowTop shadowBottom>
-      <img src={ImageX} alt=""/>
-    </ImgShadow>
-  </footer>;
+  const styleFooter = css`
+    height: 540px;
+    margin: auto;
+    overflow: hidden;
+  `
+  return (
+    <footer className={styleFooter}>
+      <ShadowTop />
+      <img src={ImageX} alt="" />
+    </footer>
+  );
 };
 
 export default Footer;
-
