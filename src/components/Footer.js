@@ -1,8 +1,10 @@
-import MovieAndInfo from './MovieAndInfo'
+import ImgShadow from './ImgShadow'
 
 const Footer = () => {
   return <footer>
-    <MovieAndInfo downloadText="Download" download/>
+    <ImgShadow shadowTop shadowBottom>
+    
+    </ImgShadow>
   </footer>;
 };
 
