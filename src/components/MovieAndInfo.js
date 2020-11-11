@@ -64,9 +64,11 @@ const MovieAndInfo = ({ download, downloadText }) => {
           <span className={styleDivider}>|</span>
           <p className={styleText}>5.02GB</p>
         </div>
-        { download && (<Link className={styleDownloadLink} to="">
-          <img src={downloadIcon} alt="" /> {downloadText}
-        </Link>)}
+        {download && (
+          <Link className={styleDownloadLink} to="">
+            <img src={downloadIcon} alt="" /> {downloadText}
+          </Link>
+        )}
       </section>
     </article>
   );
