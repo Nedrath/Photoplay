@@ -1,8 +1,8 @@
-import Avatar from './Avatar'
+import UserMenu from './UserMenu'
 
 const Footer = () => {
   return <footer>
-    <Avatar />
+    <UserMenu menuText="Account" />
   </footer>;
 };
 
