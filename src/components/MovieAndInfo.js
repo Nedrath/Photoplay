@@ -1,7 +1,9 @@
 import { css } from "emotion";
+import { Link } from "@reach/router";
 import MovieImg from "../img/MovieImg.svg";
+import downloadIcon from "../img/Download-icon.svg";
 
-const MovieAndInfo = () => {
+const MovieAndInfo = ({ download, downloadText }) => {
   const styleArticle = css`
     width: 261px;
     display: flex;
@@ -43,6 +45,15 @@ const MovieAndInfo = () => {
     justify-content: space-evenly;
     align-items: center;
   `;
+  const styleDownloadLink = css`
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ffbb3b;
+    font-size: 12px;
+    img {
+      padding-right: 5px;
+    }
+  `;
   return (
     <article className={styleArticle}>
       <img className={styleMovieImg} src={MovieImg} alt="" />
@@ -53,6 +64,9 @@ const MovieAndInfo = () => {
           <span className={styleDivider}>|</span>
           <p className={styleText}>5.02GB</p>
         </div>
+        { download && (<Link className={styleDownloadLink} to="">
+          <img src={downloadIcon} alt="" /> {downloadText}
+        </Link>)}
       </section>
     </article>
   );

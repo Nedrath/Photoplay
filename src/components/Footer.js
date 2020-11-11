@@ -1,8 +1,8 @@
-import UserMenu from './UserMenu'
+import MovieAndInfo from './MovieAndInfo'
 
 const Footer = () => {
   return <footer>
-    <UserMenu menuText="Account" />
+    <MovieAndInfo downloadText="Download" download/>
   </footer>;
 };
 
