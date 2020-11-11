@@ -1,6 +1,6 @@
 import { css } from "emotion";
 
-const ImgShadow = ({ insertImg, shadowTop, shadowBottom }) => {
+const ImgShadow = ({ children, shadowTop, shadowBottom }) => {
   const styleShadowBox = css``;
   const styleShadowTop = css`
     height: 50px;
@@ -21,7 +21,7 @@ const ImgShadow = ({ insertImg, shadowTop, shadowBottom }) => {
   return (
     <div className={styleShadowBox}>
       {shadowTop && <div className={styleShadowTop}></div>}
-      {insertImg}
+      {children}
       {shadowBottom && <div className={styleShadowBottom}></div>}
     </div>
   );
