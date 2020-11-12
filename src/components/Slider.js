@@ -9,7 +9,7 @@ const Slider = ({ image, text }) => {
     overflow-x: scroll;
     display: flex;
     flex-direction: row;
-    gap: 13px;
+    /* gap: 13px; */
     scroll-behavior: smooth;
     scrollbar-width: none;
   `;
@@ -19,6 +19,7 @@ const Slider = ({ image, text }) => {
   const styleImg = css`
     height: 127px;
     width: 97px;
+    margin-left: 13px;
   `;
   const styleText = css`
     color: white;

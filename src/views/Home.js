@@ -1,34 +1,43 @@
 import { css } from "emotion";
-import Footer from "../components/Footer";
-import ChevronBack from "../components/ChevronBack";
-import Slider from '../components/Slider'
-import HeroImage from '../components/HeroImage'
 
-import heroImageHome from '../img/ImageFrontPage.svg'
+import Footer from "../components/Footer";
+import Slider from "../components/Slider";
+import HeroImage from "../components/HeroImage";
+import Rating from "../components/Rating";
+import Stars from "../components/Stars";
+import Categories from "../components/Categories";
+import Headline from "../components/Headline";
+
+import heroImageHome from "../img/ImageFrontPage.svg";
 
 const Home = () => {
   const styleGrid = css`
-    height: 100vh;
+    /* height: 100vh; */
     background: black;
-    /* padding: 0px 16px;
-  padding-top: 44px; */
   `;
   const styleMain = css`
-    margin: auto;
-    overflow: hidden;
   `;
-  const styleHeader = css`
-    /* padding: 46px 16px 0px 16px; */
+  const styleHeader = css``;
+  const styleImgBox = css`
+  height: 535px;
+  `;
+  const styleHeadlineSlider = css`
+  margin-bottom: 79px;
   `;
   return (
     <div className={styleGrid}>
-      <header className={styleHeader}>
-      </header>
+      <header className={styleHeader}></header>
       <main className={styleMain}>
-        <HeroImage 
-          heroImg={heroImageHome}
-        />
-        <Slider />
+        <section className={styleImgBox}>
+          <HeroImage heroImg={heroImageHome} />
+        </section>
+        <Rating />
+        <Stars />
+        <Categories />
+        <section className={styleHeadlineSlider}>
+          <Headline text="Watching" />
+          <Slider />
+        </section>
       </main>
       <Footer />
     </div>

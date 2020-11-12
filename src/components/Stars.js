@@ -6,6 +6,7 @@ const Stars = () => {
   const styleSection = css`
     display: flex;
     justify-content: space-between;
+    margin: auto;
     width: 93px;
   `;
 

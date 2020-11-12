@@ -10,6 +10,7 @@ const Headline = ({ text }) => {
     font-size: 15px;
     font-weight: 700;
     color: white;
+    margin-left: 13px;
   `;
 
   return (
