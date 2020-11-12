@@ -1,10 +1,11 @@
 import { css } from "emotion";
+import { Link } from "@reach/router";
 
 const ChevronBack = () => {
-  const styleSection = css`
-    padding: 5px 5px;
+  const styleLink = css`
     display: flex;
     align-items: center;
+    text-decoration: none;
 
     ion-icon {
       color: white;
@@ -19,10 +20,10 @@ const ChevronBack = () => {
   `;
 
   return (
-    <section className={styleSection}>
+    <Link to="" className={styleLink}>
       <ion-icon name="chevron-back"></ion-icon>
       <h3 className={styleH3}>back</h3>
-    </section>
+    </Link>
   );
 };
 
