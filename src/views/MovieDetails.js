@@ -2,11 +2,11 @@ import { css } from "emotion";
 import Footer from "../components/Footer";
 import ChevronBack from "../components/ChevronBack";
 import HeroImage from "../components/HeroImage";
-import ShadowTop from '../components/ShadowTop'
-import ShadowBottom from '../components/ShadowBottom'
+import ShadowTop from "../components/ShadowTop";
+import ShadowBottom from "../components/ShadowBottom";
+import PlayButton from "../components/PlayButton";
 
 import heroImageDetails from "../img/moviedetailsImg.svg";
-
 
 const MovieDetails = () => {
   const styleGrid = css`
@@ -18,6 +18,7 @@ const MovieDetails = () => {
   `;
   const styleImgBox = css`
     position: relative;
+    height: 300px;
     top: -66px;
   `;
   return (
@@ -27,6 +28,7 @@ const MovieDetails = () => {
       </header>
       <main>
         <section className={styleImgBox}>
+          <PlayButton />
           <ShadowTop />
           <HeroImage heroImg={heroImageDetails} />
           <ShadowBottom />
