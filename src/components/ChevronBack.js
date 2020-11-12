@@ -6,10 +6,13 @@ const ChevronBack = () => {
     display: flex;
     align-items: center;
     text-decoration: none;
+    z-index: 50;
+    width: 75px;
 
     ion-icon {
       color: white;
       font-size: 20px;
+      z-index: 50;
     }
   `;
   const styleH3 = css`
@@ -17,6 +20,7 @@ const ChevronBack = () => {
     font-size: 14px;
     color: white;
     font-weight: 700;
+    z-index: 50;
   `;
 
   return (
