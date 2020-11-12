@@ -3,7 +3,7 @@ import { css } from "emotion";
 const MovieTitle = ({ title }) => {
   const styleText = css`
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 400;
   color: white;
   text-align: left;
   padding-left: 16px;
