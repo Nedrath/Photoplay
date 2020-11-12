@@ -5,6 +5,7 @@ import HeroImage from "../components/HeroImage";
 import ShadowTop from "../components/ShadowTop";
 import ShadowBottom from "../components/ShadowBottom";
 import PlayButton from "../components/PlayButton";
+import MovieTitle from '../components/MovieTitle'
 
 import heroImageDetails from "../img/moviedetailsImg.svg";
 
@@ -32,6 +33,9 @@ const MovieDetails = () => {
           <ShadowTop />
           <HeroImage heroImg={heroImageDetails} />
           <ShadowBottom />
+          <MovieTitle
+            title="Dora and the lost city of gold"
+          />
         </section>
       </main>
       <Footer />
