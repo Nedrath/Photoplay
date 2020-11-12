@@ -11,12 +11,13 @@ const Categories = () => {
     padding: 5px 15px;
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 12px;
   `;
   const styleSpan = css`
     color: white;
-    font-size: 20px;
+    font-size: 15px;
+    align-self: center;
   `;
   return (
     <section className={styleSection}>
