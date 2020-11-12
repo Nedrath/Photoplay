@@ -7,6 +7,7 @@ import ChevronBack from "../components/ChevronBack";
 // import PlayButton from "../components/PlayButton";
 // import MovieTitle from '../components/MovieTitle'
 import MovieImgTitle from '..//components/MovieImgTitle'
+import MovieText from '../components/MovieText'
 
 import heroImageDetails from "../img/moviedetailsImg.svg";
 
@@ -18,7 +19,7 @@ const MovieDetails = () => {
   const styleHeader = css`
     padding: 44px 16px 0px 16px;
   `;
-  const styleImgBox = css`
+  const styleMovieBox = css`
     position: relative;
     height: 300px;
     top: -66px;
@@ -29,7 +30,7 @@ const MovieDetails = () => {
         <ChevronBack />
       </header>
       <main>
-        <section className={styleImgBox}>
+        <section className={styleMovieBox}>
           <MovieImgTitle 
             heroImg={heroImageDetails}
           />
@@ -41,6 +42,9 @@ const MovieDetails = () => {
             title="Dora and the lost city of gold"
           /> */}
         </section>
+        <MovieText 
+          text="Having spent most of her life exploring the jungle, nothing could prepare Dora for her most dangerous adventure yet — high school. "
+        />
       </main>
       <Footer />
     </div>
