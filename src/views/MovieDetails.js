@@ -1,7 +1,6 @@
 import { css } from "emotion";
-import Header from "../components/Header";
-import Main from "../components/Main";
 import Footer from "../components/Footer";
+import ChevronBack from '../components/ChevronBack'
 
 const Home = () => {
   const styleGrid = css`
@@ -10,12 +9,16 @@ const Home = () => {
   /* padding: 0px 16px;
   padding-top: 44px; */
   `
+    const styleHeader = css`
+    padding: 46px 16px 0px 16px;
+  `;
   return (
     <div className={styleGrid}>
-      <Header />
-      {/* <Main />
-      <Footer /> */}
-      {/* <h1>HANNE VAR HER</h1> */}
+     <header className={styleHeader}>
+       <ChevronBack />
+      </header>
+      <main></main>
+      <Footer />
     </div>
   );
 };
