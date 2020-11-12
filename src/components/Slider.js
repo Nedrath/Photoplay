@@ -10,6 +10,8 @@ const Slider = ({ image, text }) => {
     display: flex;
     flex-direction: row;
     gap: 13px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
   `;
   const styleLink = css`
     text-decoration: none;
