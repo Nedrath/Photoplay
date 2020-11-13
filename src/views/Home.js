@@ -3,7 +3,7 @@ import { css } from "emotion";
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
 import HeroImage from "../components/HeroImage";
-import RatingStars from '../components/Rating-Stars'
+import RatingStars from "../components/Rating-Stars";
 import Categories from "../components/Categories";
 import Headline from "../components/Headline";
 
@@ -14,18 +14,15 @@ const Home = () => {
     /* height: 100vh; */
     background: black;
   `;
-  const styleMain = css`
-  `;
-  const styleHeader = css``;
+  const styleMain = css``;
   const styleImgBox = css`
-  height: 535px;
+    height: 535px;
   `;
   const styleHeadlineSlider = css`
-  margin-bottom: 79px;
+    margin-bottom: 79px;
   `;
   return (
     <div className={styleGrid}>
-      <header className={styleHeader}></header>
       <main className={styleMain}>
         <section className={styleImgBox}>
           <HeroImage heroImg={heroImageHome} />
