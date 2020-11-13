@@ -1,6 +1,6 @@
 import { css } from "emotion";
 
-const MovieTitle = ({ title }) => {
+const MovieTitle = ({ titleMovie }) => {
   const styleText = css`
   font-size: 19px;
   font-weight: 400;
@@ -9,7 +9,7 @@ const MovieTitle = ({ title }) => {
   padding-left: 16px;
   `;
 
-  return <p className={styleText}>{title}</p>;
+  return <p className={styleText}>{titleMovie}</p>;
 };
 
 export default MovieTitle;

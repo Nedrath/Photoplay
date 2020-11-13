@@ -8,7 +8,7 @@ const App = () => {
   return (
     <Router>
       <Home path="/" />
-      <MovieDetails path="/MovieDetails" />
+      <MovieDetails path="/moviedetails" />
     </Router>
   );
 };
