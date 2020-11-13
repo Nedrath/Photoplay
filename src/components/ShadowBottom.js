@@ -4,7 +4,7 @@ import shadowTop from "../img/shadowbottom.svg";
 const ShadowBottom = () => {
   const styleShadow = css`
     position: absolute;
-    bottom: 0px;
+    bottom: -200px;
     left: 0px;
     right: 0px;
   `;

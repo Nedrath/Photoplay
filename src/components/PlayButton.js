@@ -5,12 +5,12 @@ import PlayBtn from "../img/play-button-2.svg";
 const PlayButton = () => {
   const styleLink = css`
     position: absolute;
-    display: flex;
-    top: 44%;
+    top: 33%;
     left: 44%;
+    z-index: 85;
   `;
   const styleIcon = css`
-    z-index: 50;
+    z-index: 85;
   `;
 
   return (

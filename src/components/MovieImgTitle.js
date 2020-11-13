@@ -4,27 +4,32 @@ import ShadowBottom from "../components/ShadowBottom";
 import PlayButton from "../components/PlayButton";
 import MovieTitle from "../components/MovieTitle";
 import Categories from "../components/Categories";
+import ChevronBack from "./ChevronBack";
+import HeroImage from './HeroImage'
 
-const MovieImgTitle = ({ heroImg }) => {
-  const styleHeroImg = css``;
-  const styleWrapper = css``;
+const MovieImgTitle = ({ heroImg, topHeroImg, titleMovie, heroHeight }) => {
   const styleTitleBox = css`
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
   `;
   const styleCategoriesBox = css`
     position: absolute;
-    bottom: -10px;
+    bottom: 0px;
   `;
-
+  const styleChevron = css`
+    padding-left: 10px;
+  `;
   return (
-    <section className={styleWrapper}>
+    <section>
+      <div className={styleChevron}>
+        <ChevronBack />
+      </div>
       <PlayButton />
       <ShadowTop />
-      <img className={styleHeroImg} src={heroImg} alt="" />;
+      <HeroImage heroHeight={heroHeight} heroImg={heroImg} topHeroImg={topHeroImg}/>
       <ShadowBottom />
       <div className={styleTitleBox}>
-        <MovieTitle title="Dora and the lost city of gold" />
+        <MovieTitle titleMovie={titleMovie} />
       </div>
       <div className={styleCategoriesBox}>
         <Categories />

@@ -1,13 +1,10 @@
 import { css } from "emotion";
 import Footer from "../components/Footer";
-import ChevronBack from "../components/ChevronBack";
-// import HeroImage from "../components/HeroImage";
-// import ShadowTop from "../components/ShadowTop";
-// import ShadowBottom from "../components/ShadowBottom";
-// import PlayButton from "../components/PlayButton";
-// import MovieTitle from '../components/MovieTitle'
-import MovieImgTitle from '..//components/MovieImgTitle'
-import MovieText from '../components/MovieText'
+import MovieImgTitle from "..//components/MovieImgTitle";
+import MovieText from "../components/MovieText";
+import Rating from "../components/Rating";
+import Stars from "../components/Stars";
+import MainButton from "../components/buttons/MainButton";
 
 import heroImageDetails from "../img/moviedetailsImg.svg";
 
@@ -21,30 +18,32 @@ const MovieDetails = () => {
   `;
   const styleMovieBox = css`
     position: relative;
-    height: 300px;
-    top: -66px;
+    height: 250px;
   `;
+  const styleMiddleWrapper = css`
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  `
   return (
     <div className={styleGrid}>
-      <header className={styleHeader}>
-        <ChevronBack />
-      </header>
+      <header className={styleHeader}></header>
       <main>
         <section className={styleMovieBox}>
-          <MovieImgTitle 
+          <MovieImgTitle
             heroImg={heroImageDetails}
+            topHeroImg="-50px"
+            heroHeight="300px"
+            titleMovie="Dora and the lost city of gold"
           />
-          {/* <PlayButton />
-          <ShadowTop />
-          <HeroImage heroImg={heroImageDetails} />
-          <ShadowBottom />
-          <MovieTitle
-            title="Dora and the lost city of gold"
-          /> */}
         </section>
-        <MovieText 
-          text="Having spent most of her life exploring the jungle, nothing could prepare Dora for her most dangerous adventure yet — high school. "
-        />
+        <section className={styleMiddleWrapper}>
+          <Rating />
+          <Stars />
+          <MovieText text="Having spent most of her life exploring the jungle, nothing could prepare Dora for her most dangerous adventure yet — high school. " />
+          <MainButton text="Watch now" />
+        </section>
       </main>
       <Footer />
     </div>

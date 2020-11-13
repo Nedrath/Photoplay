@@ -4,12 +4,20 @@ import shadowTop from "../img/shadowtop.svg";
 const ShadowTop = () => {
   const styleShadow = css`
     position: absolute;
-    top: 0px;
+    top: -50px;
     left: 0px;
     right: 0px;
+    z-index: 75;
+  `;
+  const styleShadowBox = css`
+    position: ab;
   `;
 
-  return <img className={styleShadow} src={shadowTop} alt="" />;
+  return (
+    <div className={styleShadowBox}>
+      <img className={styleShadow} src={shadowTop} alt="" />;
+    </div>
+  );
 };
 
 export default ShadowTop;
