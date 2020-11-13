@@ -4,7 +4,7 @@ import movieImg3 from "../img/Cast-Movies/deadpool.svg";
 import movieImg4 from "../img/Cast-Movies/narcos.svg";
 import movieImg5 from "../img/Cast-Movies/toystory.svg";
 
-const Slider = ({ image, text }) => {
+const Slider = ({ text, name }) => {
   const styleWrapper = css`
     overflow-x: scroll;
     display: flex;
@@ -32,7 +32,7 @@ const Slider = ({ image, text }) => {
     <div className={styleWrapper}>
       <Link to="" className={styleLink}>
         <img className={styleImg} src={movieImg3} alt="" />
-        <p className={styleText}>Deadpool</p>
+        <p className={styleText}>{name}</p>
       </Link>
       <Link to="" className={styleLink}>
         <img className={styleImg} src={movieImg4} alt="" />
