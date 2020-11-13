@@ -2,7 +2,7 @@ import { css } from "emotion";
 import GoldStar from '../img/goldStar.svg'
 import EmptyStar from '../img/emptyStar.svg'
 
-const RatingStars = () => {
+const RatingStars = ({ rating }) => {
   const styleText = css`
     display: flex;
     position: relative;
@@ -22,7 +22,7 @@ const RatingStars = () => {
 
   return (
     <div>
-      <p className={styleText}>4.0</p>
+      <p className={styleText}>{rating}</p>
       <section className={styleSection}>
         <img src={GoldStar} alt="" />
         <img src={GoldStar} alt="" />
