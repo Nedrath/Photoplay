@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 const MainButton = ({ text }) => {
   const styleButton = css`
     padding: 10px 16px;
-    background: #ffbb3b;
+    background: linear-gradient(3deg, rgba(255,187,59,1) 0%, rgba(255,169,10,1) 100%);
     text-transform: uppercase;
     outline: none;
     width: 155px;
@@ -12,9 +12,8 @@ const MainButton = ({ text }) => {
     color: black;
     font-weight: 700;
     display: flex;
-    align-items: center;
+    align-self: center;
     justify-content: center;
-    margin: auto;
     border-radius: 10px;
     font-size: 16px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);

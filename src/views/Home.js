@@ -30,7 +30,7 @@ const Home = () => {
         <section className={styleImgBox}>
           <HeroImage heroImg={heroImageHome} />
         </section>
-        <RatingStars />
+        <RatingStars rating="4.0" />
         <Categories />
         <section className={styleHeadlineSlider}>
           <Headline text="Watching" />

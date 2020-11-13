@@ -2,8 +2,10 @@ import { css } from "emotion";
 import Footer from "../components/Footer";
 import MovieImgTitle from "..//components/MovieImgTitle";
 import MovieText from "../components/MovieText";
-import RatingStars from '../components/Rating-Stars'
+import RatingStars from "../components/Rating-Stars";
 import MainButton from "../components/buttons/MainButton";
+import Slider from "../components/Slider";
+import Headline from "../components/Headline";
 
 import heroImageDetails from "../img/moviedetailsImg.svg";
 
@@ -19,12 +21,15 @@ const MovieDetails = () => {
     position: relative;
     height: 250px;
   `;
-  const styleMiddleWrapper = css`
-  min-height: 300px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  `
+  const styleRatingAndText = css`
+    min-height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  `;
+  const styleRating = css`
+    margin-top: -30px;
+  `;
   return (
     <div className={styleGrid}>
       <header className={styleHeader}></header>
@@ -37,11 +42,15 @@ const MovieDetails = () => {
             titleMovie="Dora and the lost city of gold"
           />
         </section>
-        <section className={styleMiddleWrapper}>
-         <RatingStars />
+        <section className={styleRatingAndText}>
+          <div className={styleRating}>
+            <RatingStars rating="4.0" />
+          </div>
           <MovieText text="Having spent most of her life exploring the jungle, nothing could prepare Dora for her most dangerous adventure yet — high school. " />
           <MainButton text="Watch now" />
         </section>
+        <Headline text="Cast" />
+        <Slider />
       </main>
       <Footer />
     </div>
