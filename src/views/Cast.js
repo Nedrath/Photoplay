@@ -8,6 +8,7 @@ import CastName from "../components/CastName";
 
 import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
 import actorImg from "../img/Cast-Movies/Isabela Moner copy.svg";
+import heroShadowImg from '../img/Cast-Movies/Ellipse 8.svg'
 
 const MovieDetails = () => {
   const styleWrapper = css`
@@ -21,28 +22,39 @@ const MovieDetails = () => {
     position: relative;
     height: 320px;
   `;
-  const styleRatingAndText = css`
-    min-height: 250px;
+  const styleInfo = css`
+    min-height: 360px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
   `;
-
+  const styleName = css`
+    padding-bottom: 25px;
+  `;
+  const styleActorText = css`
+    padding-bottom: 20px;
+  `
   return (
     <div className={styleWrapper}>
       <header className={styleHeader}></header>
       <main>
-        <section className={styleCastBox}>
+        <div className={styleCastBox}>
           <ActorInfoImg
             topHeroImg="40px"
             heroImg={actorImg}
             leftPosition="15%"
           />
-        </section>
-        <CastName firstName="Michael" lastName="Pena" />
-        <MovieText text="Michael Peña was born and raised in Chicago, to Nicolasa, a social worker, and Eleuterio Peña, who worked at a button factory. His parents were originally from Mexico." />
-        <Headline text="Known For" />
-        <Slider name="Deadpool" movieImg={movieDeadPool} />
+        </div>
+        <div className={styleInfo}>
+          <div className={styleName}>
+            <CastName firstName="Michael" lastName="Pena" />
+          </div>
+          <div className={styleActorText}>
+            <MovieText text="Michael Peña was born and raised in Chicago, to Nicolasa, a social worker, and Eleuterio Peña, who worked at a button factory. His parents were originally from Mexico." />
+          </div>
+          <Headline text="Known For" />
+          <Slider name="Deadpool" movieImg={movieDeadPool} />
+        </div>
       </main>
       <Footer />
     </div>
