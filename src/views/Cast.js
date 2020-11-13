@@ -4,9 +4,10 @@ import MovieText from "../components/MovieText";
 import Slider from "../components/Slider";
 import ActorInfoImg from "../components/ActorInfoImg";
 import Headline from "../components/Headline";
+import CastName from "../components/CastName";
 
 import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
-import actorImg from '../img/Cast-Movies/Isabela Moner copy.svg'
+import actorImg from "../img/Cast-Movies/Isabela Moner copy.svg";
 
 const MovieDetails = () => {
   const styleWrapper = css`
@@ -18,7 +19,7 @@ const MovieDetails = () => {
   `;
   const styleCastBox = css`
     position: relative;
-    height: 250px;
+    height: 320px;
   `;
   const styleRatingAndText = css`
     min-height: 250px;
@@ -33,15 +34,13 @@ const MovieDetails = () => {
       <main>
         <section className={styleCastBox}>
           <ActorInfoImg
+            topHeroImg="40px"
             heroImg={actorImg}
-            topHeroImg="-50px"
-            heroHeight="300px"
-            titleMovie="Dora and the lost city of gold"
+            leftPosition="15%"
           />
         </section>
-        <section className={styleRatingAndText}>
-          <MovieText text="Michael Peña was born and raised in Chicago, to Nicolasa, a social worker, and Eleuterio Peña, who worked at a button factory. His parents were originally from Mexico." />
-        </section>
+        <CastName firstName="Michael" lastName="Pena" />
+        <MovieText text="Michael Peña was born and raised in Chicago, to Nicolasa, a social worker, and Eleuterio Peña, who worked at a button factory. His parents were originally from Mexico." />
         <Headline text="Known For" />
         <Slider name="Deadpool" movieImg={movieDeadPool} />
       </main>
