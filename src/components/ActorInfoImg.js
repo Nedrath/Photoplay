@@ -2,7 +2,7 @@ import { css } from "emotion";
 import ChevronBack from "./ChevronBack";
 import HeroImage from "./HeroImage";
 
-const ActorInfoImg = ({ heroImg, topHeroImg, heroHeight }) => {
+const ActorInfoImg = ({ heroImg, topHeroImg, heroHeight, leftPosition }) => {
   const styleChevron = css`
     padding-left: 10px;
   `;
@@ -15,6 +15,7 @@ const ActorInfoImg = ({ heroImg, topHeroImg, heroHeight }) => {
         heroHeight={heroHeight}
         heroImg={heroImg}
         topHeroImg={topHeroImg}
+        leftPosition={leftPosition}
       />
     </section>
   );
