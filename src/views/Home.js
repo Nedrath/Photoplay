@@ -8,6 +8,7 @@ import Categories from "../components/Categories";
 import Headline from "../components/Headline";
 
 import heroImageHome from "../img/ImageFrontPage.svg";
+import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
 
 const Home = () => {
   const styleGrid = css`
@@ -31,7 +32,10 @@ const Home = () => {
         <Categories />
         <section className={styleHeadlineSlider}>
           <Headline text="Watching" />
-          <Slider name="Deadpool" />
+          <Slider 
+          name="Deadpool"
+          movieImg={movieDeadPool} />
+
         </section>
       </main>
       <Footer />

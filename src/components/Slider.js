@@ -1,10 +1,8 @@
 import { Link } from "@reach/router";
 import { css } from "emotion";
-import movieImg3 from "../img/Cast-Movies/deadpool.svg";
 import movieImg4 from "../img/Cast-Movies/narcos.svg";
-import movieImg5 from "../img/Cast-Movies/toystory.svg";
 
-const Slider = ({ text, name }) => {
+const Slider = ({ text, name, movieImg }) => {
   const styleWrapper = css`
     overflow-x: scroll;
     display: flex;
@@ -31,7 +29,7 @@ const Slider = ({ text, name }) => {
   return (
     <div className={styleWrapper}>
       <Link to="" className={styleLink}>
-        <img className={styleImg} src={movieImg3} alt="" />
+        <img className={styleImg} src={movieImg} alt="" />
         <p className={styleText}>{name}</p>
       </Link>
       <Link to="" className={styleLink}>
@@ -39,7 +37,7 @@ const Slider = ({ text, name }) => {
         <p className={styleText}>{text}</p>
       </Link>
       <Link to="" className={styleLink}>
-        <img className={styleImg} src={movieImg3} alt="" />
+        <img className={styleImg} src={movieImg4} alt="" />
         <p className={styleText}>{text}</p>
       </Link>
       <Link to="" className={styleLink}>
@@ -47,7 +45,7 @@ const Slider = ({ text, name }) => {
         <p className={styleText}>{text}</p>
       </Link>
       <Link to="" className={styleLink}>
-        <img className={styleImg} src={movieImg5} alt="" />
+        <img className={styleImg} src={movieImg4} alt="" />
         <p className={styleText}>{text}</p>
       </Link>
     </div>
