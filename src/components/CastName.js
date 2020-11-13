@@ -7,14 +7,16 @@ const MovieTitle = ({ firstName, lastName }) => {
   `
   const styleFName = css`
   font-size: 37px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
   text-align: center;
+  z-index: 50;
   `;
   const styleLName = css`
   font-size: 25px;
   color: white;
   text-align: center;
+  z-index: 50;
   `
 
   return <div className={styleWrapper}>

@@ -1,14 +1,26 @@
 import { css } from "emotion";
 
-const HeroImage = ({ heroImg, topHeroImg, heroHeight, leftPosition }) => {
+const HeroImage = ({
+  heroImg,
+  topHeroImg,
+  heroHeight,
+  leftPosition,
+  Shadow,
+  heroShadow,
+}) => {
   const styleHeroImg = css`
-  position: absolute;
-  height: ${heroHeight};
-  top: ${topHeroImg};
-  left: ${leftPosition}
+    position: absolute;
+    height: ${heroHeight};
+    top: ${topHeroImg};
+    left: ${leftPosition};
   `;
 
-  return <img className={styleHeroImg} src={heroImg} alt="" />;
+  return (
+    <div>
+      <img className={styleHeroImg} src={heroImg} alt="" />
+      {/* {Shadow && <img className={styleHeroShadow} src={heroShadow} alt="" />} */}
+    </div>
+  );
 };
 
 export default HeroImage;

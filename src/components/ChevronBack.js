@@ -1,7 +1,7 @@
 import { css } from "emotion";
 import { Link } from "@reach/router";
 
-const ChevronBack = ({ iconColor, iconOpacity }) => {
+const ChevronBack = ({ iconColor, iconOpacity, chevronOpacity }) => {
   const styleLink = css`
     display: flex;
     align-items: center;
@@ -10,9 +10,9 @@ const ChevronBack = ({ iconColor, iconOpacity }) => {
 
     ion-icon {
       color: ${iconColor};
-      opacity: ${iconOpacity};
       font-size: 20px;
       z-index: 80;
+      opacity: ${chevronOpacity};
     }
   `;
   const styleH3 = css`
@@ -21,6 +21,7 @@ const ChevronBack = ({ iconColor, iconOpacity }) => {
     color: white;
     font-weight: 700;
     z-index: 80;
+    opacity: ${iconOpacity};
   `;
 
   return (
