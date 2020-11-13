@@ -1,14 +1,12 @@
 import { css } from "emotion";
 import Footer from "../components/Footer";
-import MovieImgTitle from "..//components/MovieImgTitle";
 import MovieText from "../components/MovieText";
-import RatingStars from "../components/Rating-Stars";
-import MainButton from "../components/buttons/MainButton";
 import Slider from "../components/Slider";
+import ActorInfoImg from "../components/ActorInfoImg";
 import Headline from "../components/Headline";
 
-import movieImage from "../img/moviedetailsImg.svg";
 import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
+import actorImg from '../img/Cast-Movies/Isabela Moner copy.svg'
 
 const MovieDetails = () => {
   const styleWrapper = css`
@@ -18,7 +16,7 @@ const MovieDetails = () => {
   const styleHeader = css`
     padding: 44px 16px 0px 16px;
   `;
-  const styleMovieBox = css`
+  const styleCastBox = css`
     position: relative;
     height: 250px;
   `;
@@ -28,29 +26,23 @@ const MovieDetails = () => {
     justify-content: space-evenly;
     flex-direction: column;
   `;
-  const styleRating = css`
-    margin-top: -30px;
-  `;
+
   return (
     <div className={styleWrapper}>
       <header className={styleHeader}></header>
       <main>
-        <section className={styleMovieBox}>
-          <MovieImgTitle
-            heroImg={movieImage}
+        <section className={styleCastBox}>
+          <ActorInfoImg
+            heroImg={actorImg}
             topHeroImg="-50px"
             heroHeight="300px"
             titleMovie="Dora and the lost city of gold"
           />
         </section>
         <section className={styleRatingAndText}>
-          <div className={styleRating}>
-            <RatingStars rating="4.0" />
-          </div>
-          <MovieText text="Having spent most of her life exploring the jungle, nothing could prepare Dora for her most dangerous adventure yet — high school. " />
-          <MainButton text="Watch now" />
+          <MovieText text="Michael Peña was born and raised in Chicago, to Nicolasa, a social worker, and Eleuterio Peña, who worked at a button factory. His parents were originally from Mexico." />
         </section>
-        <Headline text="Cast" />
+        <Headline text="Known For" />
         <Slider name="Deadpool" movieImg={movieDeadPool} />
       </main>
       <Footer />
