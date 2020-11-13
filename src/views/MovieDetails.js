@@ -7,7 +7,7 @@ import MainButton from "../components/buttons/MainButton";
 import Slider from "../components/Slider";
 import Headline from "../components/Headline";
 
-import heroImageDetails from "../img/moviedetailsImg.svg";
+import movieImage from "../img/moviedetailsImg.svg";
 import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
 
 const MovieDetails = () => {
@@ -37,7 +37,7 @@ const MovieDetails = () => {
       <main>
         <section className={styleMovieBox}>
           <MovieImgTitle
-            heroImg={heroImageDetails}
+            heroImg={movieImage}
             topHeroImg="-50px"
             heroHeight="300px"
             titleMovie="Dora and the lost city of gold"
