@@ -3,8 +3,7 @@ import { css } from "emotion";
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
 import HeroImage from "../components/HeroImage";
-import Rating from "../components/Rating";
-import Stars from "../components/Stars";
+import RatingStars from '../components/Rating-Stars'
 import Categories from "../components/Categories";
 import Headline from "../components/Headline";
 
@@ -31,8 +30,7 @@ const Home = () => {
         <section className={styleImgBox}>
           <HeroImage heroImg={heroImageHome} />
         </section>
-        <Rating />
-        <Stars />
+        <RatingStars />
         <Categories />
         <section className={styleHeadlineSlider}>
           <Headline text="Watching" />

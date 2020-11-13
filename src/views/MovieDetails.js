@@ -2,8 +2,7 @@ import { css } from "emotion";
 import Footer from "../components/Footer";
 import MovieImgTitle from "..//components/MovieImgTitle";
 import MovieText from "../components/MovieText";
-import Rating from "../components/Rating";
-import Stars from "../components/Stars";
+import RatingStars from '../components/Rating-Stars'
 import MainButton from "../components/buttons/MainButton";
 
 import heroImageDetails from "../img/moviedetailsImg.svg";
@@ -39,8 +38,7 @@ const MovieDetails = () => {
           />
         </section>
         <section className={styleMiddleWrapper}>
-          <Rating />
-          <Stars />
+         <RatingStars />
           <MovieText text="Having spent most of her life exploring the jungle, nothing could prepare Dora for her most dangerous adventure yet — high school. " />
           <MainButton text="Watch now" />
         </section>
