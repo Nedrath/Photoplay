@@ -5,7 +5,7 @@ import PlayButton from "../components/PlayButton";
 import MovieTitle from "../components/MovieTitle";
 import Categories from "../components/Categories";
 import ChevronBack from "./ChevronBack";
-import HeroImage from './HeroImage'
+import HeroImage from "./HeroImage";
 
 const MovieImgTitle = ({ heroImg, topHeroImg, titleMovie, heroHeight }) => {
   const styleTitleBox = css`
@@ -22,11 +22,15 @@ const MovieImgTitle = ({ heroImg, topHeroImg, titleMovie, heroHeight }) => {
   return (
     <section>
       <div className={styleChevron}>
-        <ChevronBack />
+        <ChevronBack iconColor="white" />
       </div>
       <PlayButton />
       <ShadowTop />
-      <HeroImage heroHeight={heroHeight} heroImg={heroImg} topHeroImg={topHeroImg}/>
+      <HeroImage
+        heroHeight={heroHeight}
+        heroImg={heroImg}
+        topHeroImg={topHeroImg}
+      />
       <ShadowBottom />
       <div className={styleTitleBox}>
         <MovieTitle titleMovie={titleMovie} />

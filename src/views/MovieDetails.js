@@ -8,6 +8,7 @@ import Slider from "../components/Slider";
 import Headline from "../components/Headline";
 
 import heroImageDetails from "../img/moviedetailsImg.svg";
+import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
 
 const MovieDetails = () => {
   const styleGrid = css`
@@ -50,7 +51,7 @@ const MovieDetails = () => {
           <MainButton text="Watch now" />
         </section>
         <Headline text="Cast" />
-        <Slider />
+        <Slider name="Deadpool" movieImg={movieDeadPool} />
       </main>
       <Footer />
     </div>
