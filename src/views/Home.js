@@ -31,7 +31,7 @@ const Home = () => {
         <Categories />
         <section className={styleHeadlineSlider}>
           <Headline text="Watching" />
-          <Slider />
+          <Slider name="Deadpool" />
         </section>
       </main>
       <Footer />
