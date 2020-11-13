@@ -21,19 +21,3 @@ const ActorInfoImg = ({ heroImg, topHeroImg, heroHeight }) => {
 };
 
 export default ActorInfoImg;
-
-// const styleMovieBox = css`
-// position: relative;
-// height: 250px;
-// `;
-
-// import ActorInfoImg from '../components/ActorInfoImg'
-// import actorImg from '../img/Cast-Movies/Isabela Moner copy.svg'
-
-{/* <ActorInfoImg
-heroImg={actorImg}
-/> */}
-
-{/* <section className={styleMovieBox}>
-
-</section> */}

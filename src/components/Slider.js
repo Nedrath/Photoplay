@@ -28,7 +28,7 @@ const Slider = ({ text, name, movieImg }) => {
   `;
   return (
     <div className={styleWrapper}>
-      <Link to="" className={styleLink}>
+      <Link to="/Cast" className={styleLink}>
         <img className={styleImg} src={movieImg} alt="" />
         <p className={styleText}>{name}</p>
       </Link>
