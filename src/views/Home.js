@@ -1,4 +1,5 @@
 import { css } from "emotion";
+import { Link } from "@reach/router";
 
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
@@ -26,16 +27,15 @@ const Home = () => {
     <div className={styleGrid}>
       <main className={styleMain}>
         <section className={styleImgBox}>
-          <HeroImage heroImg={heroImageHome} />
+          <Link to="/moviedetails">
+            <HeroImage heroImg={heroImageHome} />
+          </Link>
         </section>
         <RatingStars rating="4.0" />
         <Categories />
         <section className={styleHeadlineSlider}>
           <Headline text="Watching" />
-          <Slider 
-          name="Deadpool"
-          movieImg={movieDeadPool} />
-
+          <Slider name="Deadpool" movieImg={movieDeadPool} />
         </section>
       </main>
       <Footer />
