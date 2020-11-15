@@ -39,6 +39,7 @@ const MovieDetails = () => {
             topHeroImg="-50px"
             heroHeight="300px"
             titleMovie="Narcos"
+            genreText="Adventure"
           />
         </section>
         <section className={styleRatingAndText}>

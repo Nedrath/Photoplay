@@ -7,7 +7,7 @@ import Categories from "../components/Categories";
 import ChevronBack from "./ChevronBack";
 import HeroImage from "./HeroImage";
 
-const MovieImgTitle = ({ heroImg, topHeroImg, titleMovie, heroHeight }) => {
+const MovieImgTitle = ({ heroImg, topHeroImg, titleMovie, heroHeight, genreText }) => {
   const styleTitleBox = css`
     position: absolute;
     bottom: 40px;
@@ -36,7 +36,9 @@ const MovieImgTitle = ({ heroImg, topHeroImg, titleMovie, heroHeight }) => {
         <MovieTitle titleMovie={titleMovie} />
       </div>
       <div className={styleCategoriesBox}>
-        <Categories />
+        <Categories
+          genreText={genreText}
+        />
       </div>
     </section>
   );
