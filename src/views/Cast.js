@@ -8,7 +8,6 @@ import CastName from "../components/CastName";
 
 import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
 import actorImg from "../img/Cast-Movies/Isabela Moner copy.svg";
-import heroShadowImg from '../img/Cast-Movies/Ellipse 8.svg'
 
 const MovieDetails = () => {
   const styleWrapper = css`
