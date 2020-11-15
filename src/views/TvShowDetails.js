@@ -5,6 +5,7 @@ import MovieText from "../components/MovieText";
 import RatingStars from "../components/Rating-Stars";
 import MainButton from "../components/buttons/MainButton";
 import Headline from "../components/Headline";
+import MovieAndInfo from "../components/MovieAndInfo";
 
 import tvShowDetailsImg from "../img/TvDetailsImg.svg";
 
@@ -29,6 +30,10 @@ const MovieDetails = () => {
   const styleRating = css`
     margin-top: -30px;
   `;
+  const styleEpisodesBox = css`
+  background: black;
+  margin-bottom: 79px;
+  `
   return (
     <div className={styleWrapper}>
       <header className={styleHeader}></header>
@@ -50,7 +55,11 @@ const MovieDetails = () => {
           <MainButton text="Watch now" />
         </section>
         <Headline text="Episodes" />
-        
+        <div className={styleEpisodesBox}>
+          <MovieAndInfo download downloadText="Download" paddingBottom="0px"/>
+          <MovieAndInfo download downloadText="Download" paddingBottom="0px"/>
+          <MovieAndInfo download downloadText="Download" paddingBottom="0px"/>
+        </div>
       </main>
       <Footer />
     </div>

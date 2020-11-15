@@ -1,14 +1,14 @@
 import { css } from "emotion";
 import { Link } from "@reach/router";
-import MovieImg from "../img/MovieImg.svg";
+import MovieImg from "../img/Cast-Movies/MovieImg.svg";
 import downloadIcon from "../img/Download-icon.svg";
 
-const MovieAndInfo = ({ download, downloadText }) => {
+const MovieAndInfo = ({ download, downloadText, paddingBottom, play }) => {
   const styleArticle = css`
     width: 261px;
     display: flex;
     padding-top: 13px;
-    padding-bottom: 13px;
+    padding-bottom: ${paddingBottom};
   `;
   const styleSection = css`
     display: flex;
@@ -56,7 +56,12 @@ const MovieAndInfo = ({ download, downloadText }) => {
   `;
   return (
     <article className={styleArticle}>
-      <img className={styleMovieImg} src={MovieImg} alt="" />
+        <img className={styleMovieImg} src={MovieImg} alt="" />
+        {/* {play && (
+          <Link to="">
+            <ion-icon name="play-circle-outline"></ion-icon>
+          </Link>
+        )} */}
       <section className={styleSection}>
         <h3 className={styleH3}>Narcos</h3>
         <div className={styleInfo}>
