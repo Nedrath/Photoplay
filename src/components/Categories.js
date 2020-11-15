@@ -1,7 +1,7 @@
 import { css } from "emotion";
 import { Link } from "@reach/router";
 
-const Categories = () => {
+const Categories = ( { genreText } ) => {
   const styleSection = css`
     display: flex;
     justify-content: center;
@@ -22,19 +22,19 @@ const Categories = () => {
   return (
     <section className={styleSection}>
       <Link className={styleLink} to="">
-        Movie
+        {genreText}
       </Link>
       <span className={styleSpan}>|</span>
       <Link className={styleLink} to="">
-        Adventure
+        {genreText}
       </Link>
       <span className={styleSpan}>|</span>
       <Link className={styleLink} to="">
-        Comedy
+        {genreText}
       </Link>
       <span className={styleSpan}>|</span>
       <Link className={styleLink} to="">
-        Family
+        {genreText}
       </Link>
     </section>
   );

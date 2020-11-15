@@ -41,6 +41,7 @@ const MovieDetails = () => {
             topHeroImg="-50px"
             heroHeight="300px"
             titleMovie="Dora and the lost city of gold"
+            genreText="Adventure"
           />
         </section>
         <section className={styleRatingAndText}>
