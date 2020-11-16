@@ -32,7 +32,7 @@ const Slider = ({ text, name, movieImg }) => {
         <img className={styleImg} src={movieImg} alt="" />
         <p className={styleText}>{name}</p>
       </Link>
-      <Link to="" className={styleLink}>
+      <Link to="/cast" className={styleLink}>
         <img className={styleImg} src={movieImg4} alt="" />
         <p className={styleText}>{text}</p>
       </Link>

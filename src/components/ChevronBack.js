@@ -1,5 +1,6 @@
 import { css } from "emotion";
-import { Link } from "@reach/router";
+// import { Link } from "@reach/router";
+// import { ESLint } from "eslint";
 
 const ChevronBack = ({ iconColor, iconOpacity, chevronOpacity }) => {
   const styleLink = css`
@@ -24,11 +25,16 @@ const ChevronBack = ({ iconColor, iconOpacity, chevronOpacity }) => {
     opacity: ${iconOpacity};
   `;
 
+  function LastPage() {
+    window.history.back();
+  }
+
   return (
-    <Link to="" className={styleLink}>
+    //eslint-disable-next-line
+    <div onClick={LastPage} className={styleLink}>
       <ion-icon name="chevron-back"></ion-icon>
       <h3 className={styleH3}>back</h3>
-    </Link>
+    </div>
   );
 };
 
