@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import movieImg from "../img/Cast-Movies/deadpool.svg";
 
 const Search = () => {
+
   const styleMain = css`
     height: 100vh;
     background: black;

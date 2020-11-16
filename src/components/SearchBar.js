@@ -1,6 +1,11 @@
 import { css } from "emotion";
+import { useContext } from "react";
+import { searchContext } from "../context/SearchContext";
 
 const SearchBar = () => {
+  const { setSearch } = useContext(searchContext);
+  const { type, setType } = useContext(searchContext);
+  console.log(type);
   const styleForm = css`
     padding-bottom: 25px;
     display: flex;
@@ -34,8 +39,36 @@ const SearchBar = () => {
     <form className={styleForm}>
       <label className={styleLabel} htmlFor="">
         <ion-icon name="search-sharp"></ion-icon>
-        <input className={styleInput} type="search" name="" id="" />
+        <input
+          className={styleInput}
+          type="search"
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+          name=""
+          id=""
+        />
       </label>
+      <div>
+        <input
+          onChange={(e) => {
+            setType(e.target.value);
+          }}
+          type="radio"
+          name="type"
+          id=""
+          value="TvShow"
+        />
+        <input
+          onChange={(e) => {
+            setType(e.target.value);
+          }}
+          type="radio"
+          name="type"
+          id=""
+          value="Movies"
+        />
+      </div>
     </form>
   );
 };
