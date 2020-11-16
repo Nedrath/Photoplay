@@ -35,7 +35,7 @@ const Footer = () => {
  `;
   return (
     <nav className={styleNav}>
-      <Link to="" className={styleLink}>
+      <Link to="/" className={styleLink}>
      <Navigation 
      icon={iconHome}
      text="home"
