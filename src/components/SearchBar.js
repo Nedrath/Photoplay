@@ -1,7 +1,11 @@
 import { css } from "emotion";
 
 const SearchBar = () => {
-  const styleForm = css``;
+  const styleForm = css`
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+  `;
   const styleLabel = css`
     display: flex;
     align-items: center;
@@ -23,7 +27,7 @@ const SearchBar = () => {
     padding-left: 50px;
     padding-right: 15px;
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
   `;
   return (
