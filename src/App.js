@@ -5,6 +5,7 @@ import MovieDetails from './views/MovieDetails'
 import Cast from './views/Cast'
 import TvShowDetails from './views/TvShowDetails'
 import Search from './views/Search'
+import Downloads from './views/Downloads'
 // import UserContextProvider from "./context/UserContext";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Cast path="/cast" />
       <TvShowDetails path="/tv-details" />
       <Search path="/search" />
+      <Downloads path="/downloads" />
     </Router>
   );
 };
