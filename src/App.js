@@ -10,9 +10,9 @@ const App = () => {
   return (
     <Router>
       <Home path="/" />
-      <MovieDetails path="/moviedetails" />
-      <Cast path="/Cast" />
-      <TvShowDetails path="/TV-Details" />
+      <MovieDetails path="/movie-details" />
+      <Cast path="/cast" />
+      <TvShowDetails path="/tv-details" />
     </Router>
   );
 };

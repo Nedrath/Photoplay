@@ -56,7 +56,7 @@ const MovieDetails = () => {
         </section>
         <Headline text="Episodes" />
         <div className={styleEpisodesBox}>
-          <MovieAndInfo download downloadText="Download" paddingBottom="0px"/>
+          <MovieAndInfo download downloadText="owDnload" paddingBottom="0px"/>
           <MovieAndInfo download downloadText="Download" paddingBottom="0px"/>
           <MovieAndInfo download downloadText="Download" paddingBottom="0px"/>
         </div>

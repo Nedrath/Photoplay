@@ -27,7 +27,7 @@ const Home = () => {
     <div className={styleGrid}>
       <main className={styleMain}>
         <section className={styleImgBox}>
-          <Link to="/moviedetails">
+          <Link to="/movie-details">
             <HeroImage heroImg={heroImageHome} />
           </Link>
         </section>
