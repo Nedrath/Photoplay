@@ -4,8 +4,7 @@ import { searchContext } from "../context/SearchContext";
 
 const SearchBar = () => {
   const { setSearch } = useContext(searchContext);
-  const { type, setType } = useContext(searchContext);
-  console.log(type);
+  // console.log(type);
   const styleForm = css`
     padding-bottom: 25px;
     display: flex;
@@ -49,26 +48,6 @@ const SearchBar = () => {
           id=""
         />
       </label>
-      <div>
-        <input
-          onChange={(e) => {
-            setType(e.target.value);
-          }}
-          type="radio"
-          name="type"
-          id=""
-          value="TvShow"
-        />
-        <input
-          onChange={(e) => {
-            setType(e.target.value);
-          }}
-          type="radio"
-          name="type"
-          id=""
-          value="Movies"
-        />
-      </div>
     </form>
   );
 };
