@@ -16,7 +16,9 @@ const Home = () => {
     /* height: 100vh; */
     background: black;
   `;
-  const styleMain = css``;
+  const styleMain = css`
+  background: black;
+  `;
   const styleImgBox = css`
     height: 535px;
   `;
