@@ -59,27 +59,6 @@ const Search = ( ) => {
             ))}
           </div>
           <DividerCategorie text="movies" dividerWidth="86%" />
-          {/* <input
-            onChange={(e) => {
-              setType(e.target.value);
-            }}
-            type="radio"
-            name="type"
-            id=""
-            value="movie/"
-          />
-          <div className={styleMovieGrid}>
-            {searchResult.length > 0 ? (
-              <MovieImage movieID={searchResult[0].id} />
-            ) : (
-              "no results found"
-            )}
-            {searchResult.map((result) => (
-              <div className={styleList} key={result.id}>
-                <MovieImage movieID={result.id} />
-              </div>
-            ))}
-          </div> */}
         </main>
         <Footer />
       </div>

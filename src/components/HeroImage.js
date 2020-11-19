@@ -5,8 +5,6 @@ const HeroImage = ({
   topHeroImg,
   heroHeight,
   leftPosition,
-  Shadow,
-  heroShadow,
 }) => {
   const styleHeroImg = css`
     position: absolute;

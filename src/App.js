@@ -7,21 +7,21 @@ import TvShowDetails from "./views/TvShowDetails";
 import Search from "./views/Search";
 import Downloads from "./views/Downloads";
 import SearchContextProvider from "./context/SearchContext";
-import TopRatedContextProvider from "./context/TopRatedContext";
+import SliderContextProvider from "./context/SliderContext";
 
 const App = () => {
   return (
     <SearchContextProvider>
-      <TopRatedContextProvider>
+      <SliderContextProvider>
         <Router>
           <Home path="/" />
-          <MovieDetails path="/movie-details" />
+          <MovieDetails path="/movie-details/:id" />
           <Cast path="/cast" />
           <TvShowDetails path="/tv-details" />
           <Search path="/search" />
           <Downloads path="/downloads" />
         </Router>
-      </TopRatedContextProvider>
+      </SliderContextProvider>
     </SearchContextProvider>
   );
 };
