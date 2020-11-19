@@ -6,7 +6,7 @@ import DividerCategorie from "../components/DividerCategorie";
 import Footer from "../components/Footer";
 import MovieImage from "../components/MovieImage";
 
-const Search = ({ value }) => {
+const Search = ( ) => {
   const { searchResult } = useContext(searchContext);
   const { type, setType } = useContext(searchContext);
 
@@ -59,7 +59,7 @@ const Search = ({ value }) => {
             ))}
           </div>
           <DividerCategorie text="movies" dividerWidth="86%" />
-          <input
+          {/* <input
             onChange={(e) => {
               setType(e.target.value);
             }}
@@ -79,7 +79,7 @@ const Search = ({ value }) => {
                 <MovieImage movieID={result.id} />
               </div>
             ))}
-          </div>
+          </div> */}
         </main>
         <Footer />
       </div>

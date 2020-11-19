@@ -1,10 +1,10 @@
 import { css } from "emotion";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "@reach/router";
 
 const clientSecret = "4672e3dba68e7b4dc35cdd0a4ddb1e00";
 
-const MovieImage = ({ movieID, movieTitle, watchType }) => {
+const MovieImage = ({ movieID, movieTitle }) => {
   const [movieData, setMovieData] = useState(null);
   console.log(movieData);
   const styleMovieImg = css`
@@ -47,9 +47,9 @@ const MovieImage = ({ movieID, movieTitle, watchType }) => {
           src={`https://image.tmdb.org/t/p/original${movieData.poster_path}`}
           alt=""
         />
+        {movieTitle && <p>{movieData.title}</p>}
       </Link>
     ))
-    // { movieTitle &&  <p>hej</p> }
   );
 };
 

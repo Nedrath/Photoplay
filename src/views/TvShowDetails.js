@@ -31,9 +31,9 @@ const MovieDetails = () => {
     margin-top: -30px;
   `;
   const styleEpisodesBox = css`
-  background: black;
-  margin-bottom: 79px;
-  `
+    background: black;
+    margin-bottom: 79px;
+  `;
   return (
     <div className={styleWrapper}>
       <header className={styleHeader}></header>
@@ -56,9 +56,9 @@ const MovieDetails = () => {
         </section>
         <Headline text="Episodes" />
         <div className={styleEpisodesBox}>
-          <MovieAndInfo download downloadText="owDnload" paddingBottom="0px"/>
-          <MovieAndInfo download downloadText="Download" paddingBottom="0px"/>
-          <MovieAndInfo download downloadText="Download" paddingBottom="0px"/>
+          <MovieAndInfo download downloadText="owDnload" paddingBottom="0px" />
+          <MovieAndInfo download downloadText="Download" paddingBottom="0px" />
+          <MovieAndInfo download downloadText="Download" paddingBottom="0px" />
         </div>
       </main>
       <Footer />
