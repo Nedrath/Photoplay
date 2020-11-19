@@ -15,7 +15,7 @@ const SearchContextProvider = (props) => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/search/keyword?api_key=${clientSecret}&query=${search}&page=1`,
+      `https://api.themoviedb.org/3/search/keyword?api_key=${clientSecret}&query=${search}&language=en-US?page=1`,
       {
         method: "GET",
       }

@@ -9,7 +9,6 @@ import Categories from "../components/Categories";
 import Headline from "../components/Headline";
 
 import heroImageHome from "../img/ImageFrontPage.svg";
-import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
 
 const Home = () => {
   const styleGrid = css`
@@ -34,10 +33,10 @@ const Home = () => {
           </Link>
         </section>
         <RatingStars rating="4.0" />
-        <Categories />
+        <Categories genreText="Adventure" />
         <section className={styleHeadlineSlider}>
           <Headline text="Watching" />
-          <Slider name="Deadpool" movieImg={movieDeadPool} />
+          <Slider />
         </section>
       </main>
       <Footer />

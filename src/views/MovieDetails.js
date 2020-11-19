@@ -1,4 +1,5 @@
 import { css } from "emotion";
+import { useContext } from "react";
 import Footer from "../components/Footer";
 import MovieImgTitle from "..//components/MovieImgTitle";
 import MovieText from "../components/MovieText";
@@ -6,14 +7,17 @@ import RatingStars from "../components/Rating-Stars";
 import MainButton from "../components/buttons/MainButton";
 import Slider from "../components/Slider";
 import Headline from "../components/Headline";
+import { SliderContext } from "../context/SliderContext";
 
 import movieImage from "../img/moviedetailsImg.svg";
-import movieDeadPool from "../img/Cast-Movies/deadpool.svg";
 
 const MovieDetails = () => {
+  const { setElements } = useContext(SliderContext);
+  setElements("credit");
   const styleWrapper = css`
     height: 100vh;
     background: black;
+    margin-bottom: 25px;
   `;
   const styleHeader = css`
     padding: 44px 16px 0px 16px;
@@ -52,7 +56,7 @@ const MovieDetails = () => {
           <MainButton text="Watch now" />
         </section>
         <Headline text="Cast" />
-        <Slider name="Deadpool" movieImg={movieDeadPool} />
+        <Slider />
       </main>
       <Footer />
     </div>

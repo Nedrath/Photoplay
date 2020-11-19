@@ -1,9 +1,11 @@
 import { Link } from "@reach/router";
 import { css } from "emotion";
-import MovieImage from "./MovieImage";
+import { Fragment, useContext } from "react";
+import { SliderContext } from "../context/SliderContext";
 
-const Slider = ({ text, name, movieImg }) => {
-  // const { topRated } = useContext(searchContext);
+const Slider = () => {
+  const { topRated, setElements } = useContext(SliderContext);
+  setElements("popular");
   const styleWrapper = css`
     overflow-x: scroll;
     display: flex;
@@ -25,14 +27,28 @@ const Slider = ({ text, name, movieImg }) => {
     text-align: center;
     text-decoration: none;
     font-size: 12px;
-    padding: 3px 0px;
   `;
   return (
-    <div className={styleWrapper}>
-      <Link to="/movie-details" className={styleLink}>
-        <MovieImage movieTitle />
-      </Link>
-    </div>
+    topRated && (
+      <Fragment>
+        <div className={styleWrapper}>
+          {topRated.map((result) => (
+            <Link
+              key={result.id}
+              to={`/movie-details/${result.id}`}
+              className={styleLink}
+            >
+              <img
+                className={styleImg}
+                src={`https://image.tmdb.org/t/p/original${result.poster_path}`}
+                alt=""
+              />
+              <p className={styleText}>{result.title}</p>
+            </Link>
+          ))}
+        </div>
+      </Fragment>
+    )
   );
 };
 

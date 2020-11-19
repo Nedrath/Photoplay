@@ -6,7 +6,7 @@ const clientSecret = "4672e3dba68e7b4dc35cdd0a4ddb1e00";
 
 const MovieImage = ({ movieID, movieTitle }) => {
   const [movieData, setMovieData] = useState(null);
-  console.log(movieData);
+  // console.log(movieData);
   const styleMovieImg = css`
     width: 91px;
     height: 135px;
@@ -30,7 +30,7 @@ const MovieImage = ({ movieID, movieTitle }) => {
   `;
   useEffect(() => {
     fetch(`
-   https://api.themoviedb.org/3/movie/${movieID}?api_key=${clientSecret}&language=en-US`)
+   https://api.themoviedb.org/3/movie/${movieID}?api_key=${clientSecret}`)
       .then((response) => response.json())
       .then((data) => setMovieData(data));
   }, [movieID]);
@@ -42,14 +42,19 @@ const MovieImage = ({ movieID, movieTitle }) => {
       </Link>
     ) : (
       <Link className={styleLink} to="">
-        <img
+        { movieData.poster_path ? (<img
           className={styleMovieImg}
           src={`https://image.tmdb.org/t/p/original${movieData.poster_path}`}
           alt=""
-        />
+        />) : (<img
+        className={styleMovieImg}
+        src={`https://image.tmdb.org/t/p/original${movieData.backdrop_path}`}
+        alt=""
+      />)}
         {movieTitle && <p>{movieData.title}</p>}
       </Link>
-    ))
+    )
+    )
   );
 };
 
