@@ -17,7 +17,7 @@ const Home = () => {
     background: black;
   `;
   const styleMain = css`
-  background: black;
+    background: black;
   `;
   const styleImgBox = css`
     height: 535px;

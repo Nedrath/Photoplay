@@ -1,8 +1,9 @@
 import { Link } from "@reach/router";
 import { css } from "emotion";
-import movieImg4 from "../img/Cast-Movies/narcos.svg";
+import MovieImage from "./MovieImage";
 
 const Slider = ({ text, name, movieImg }) => {
+  // const { topRated } = useContext(searchContext);
   const styleWrapper = css`
     overflow-x: scroll;
     display: flex;
@@ -29,24 +30,7 @@ const Slider = ({ text, name, movieImg }) => {
   return (
     <div className={styleWrapper}>
       <Link to="/movie-details" className={styleLink}>
-        <img className={styleImg} src={movieImg} alt="" />
-        <p className={styleText}>{name}</p>
-      </Link>
-      <Link to="/cast" className={styleLink}>
-        <img className={styleImg} src={movieImg4} alt="" />
-        <p className={styleText}>{text}</p>
-      </Link>
-      <Link to="" className={styleLink}>
-        <img className={styleImg} src={movieImg4} alt="" />
-        <p className={styleText}>{text}</p>
-      </Link>
-      <Link to="" className={styleLink}>
-        <img className={styleImg} src={movieImg4} alt="" />
-        <p className={styleText}>{text}</p>
-      </Link>
-      <Link to="" className={styleLink}>
-        <img className={styleImg} src={movieImg4} alt="" />
-        <p className={styleText}>{text}</p>
+        <MovieImage movieTitle />
       </Link>
     </div>
   );
