@@ -1,18 +1,15 @@
 import { css } from "emotion";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { searchContext } from "../context/SearchContext";
 import SearchBar from "../components/SearchBar";
 import DividerCategorie from "../components/DividerCategorie";
 import Footer from "../components/Footer";
 import MovieImage from "../components/MovieImage";
 
-const Search = ( ) => {
+const Search = () => {
   const { searchResult } = useContext(searchContext);
-  const { type, setType } = useContext(searchContext);
+  const { setType } = useContext(searchContext);
 
-  useEffect(() => {
-    onclick
-  }, []);
   // console.log(searchResult);
   const styleMain = css`
     min-height: 100vh;

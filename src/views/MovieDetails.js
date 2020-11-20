@@ -1,5 +1,4 @@
 import { css } from "emotion";
-import { useContext } from "react";
 import Footer from "../components/Footer";
 import MovieImgTitle from "..//components/MovieImgTitle";
 import MovieText from "../components/MovieText";
@@ -7,13 +6,17 @@ import RatingStars from "../components/Rating-Stars";
 import MainButton from "../components/buttons/MainButton";
 import Slider from "../components/Slider";
 import Headline from "../components/Headline";
-import { SliderContext } from "../context/SliderContext";
 
 import movieImage from "../img/moviedetailsImg.svg";
 
-const MovieDetails = () => {
-  const { setElements } = useContext(SliderContext);
-  setElements("credit");
+// const clientSecret = "4672e3dba68e7b4dc35cdd0a4ddb1e00";
+
+const MovieDetails = (props) => {
+  // console.log(props.id)
+
+  // useEffect(()=>{
+  //   fetch(`https://api.themoviedb.org/3/movie/${props.id}?api_key=${clientSecret}&language=en-US`)
+  // }, [props.id])
   const styleWrapper = css`
     height: 100vh;
     background: black;
@@ -56,7 +59,7 @@ const MovieDetails = () => {
           <MainButton text="Watch now" />
         </section>
         <Headline text="Cast" />
-        <Slider />
+        <Slider selectType="credits" creditID={props.id} />
       </main>
       <Footer />
     </div>
