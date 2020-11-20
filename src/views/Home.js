@@ -1,6 +1,5 @@
 import { css } from "emotion";
 import { Link } from "@reach/router";
-
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
 import HeroImage from "../components/HeroImage";
@@ -36,7 +35,7 @@ const Home = () => {
         <Categories genreText="Adventure" />
         <section className={styleHeadlineSlider}>
           <Headline text="Watching" />
-          <Slider />
+          <Slider selectType="popular" />
         </section>
       </main>
       <Footer />
