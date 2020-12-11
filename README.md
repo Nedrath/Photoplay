@@ -1,3 +1,3 @@
-# React-Template / Boilerplate
+IplayMusic - Netlify - https://iplaymusic-mark.netlify.app
 
-Clone repository and run **"npm install"** then it will install everything from package.json
+update for API refresh
